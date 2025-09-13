@@ -26,7 +26,7 @@ const Header = () => {
         {/* Logo + Title */}
         <div className="flex items-center gap-3">
           <div className="bg-blue-700 text-white w-12 h-12 flex items-center justify-center font-bold rounded-full">
-            AS
+            <img src="/asrs_logo.png" alt="ASRS RojgarLogo" />
           </div>
           <div>
             <h1 className="text-xl md:text-2xl font-bold text-blue-800">
