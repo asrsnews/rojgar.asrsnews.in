@@ -1,3 +1,7 @@
+import "./globals.css";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
+
 export const metadata = {
   title: "Rojgar Updates - ASRS",
   description: "Daily Sarkari Naukri Updates in Hindi and English",
@@ -6,39 +10,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="hi">
-      <body
-        style={{
-          fontFamily: "Arial, sans-serif",
-          margin: 0,
-          background: "#f9f9f9",
-        }}
-      >
-        <header
-          style={{
-            background: "#20124d",
-            color: "#fff",
-            padding: "15px",
-            textAlign: "center",
-          }}
-        >
-          <h1 style={{ margin: 0 }}>Rojgar Updates - ASRS</h1>
-          <p style={{ margin: "5px 0" }}>आज की ताज़ा सरकारी नौकरियां</p>
-        </header>
-        <main
-          style={{ maxWidth: "1200px", margin: "20px auto", padding: "15px" }}
-        >
+      <body className="font-sans bg-gray-100 text-gray-900 flex flex-col min-h-screen">
+        {/* Header */}
+        <Header />
+
+        {/* Main Content */}
+        <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {children}
         </main>
-        <footer
-          style={{
-            background: "#20124d",
-            color: "#fff",
-            textAlign: "center",
-            padding: "15px",
-          }}
-        >
-          <p>© 2025 Rojgar Updates by ASRS</p>
-        </footer>
+
+        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );
