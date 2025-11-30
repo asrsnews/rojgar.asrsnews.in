@@ -85,6 +85,9 @@ const Header = () => {
             <a href="/contact" className="hover:text-yellow-300">
               Contact Us
             </a>
+            <a href="/gallery" className="hover:text-yellow-300">
+              Gallery
+            </a>
           </div>
         </div>
 
